@@ -10,10 +10,6 @@ CREATE TABLE carro (
     FOREIGN KEY(id_mensal) REFERENCES mensal(id_mensal) ON DELETE CASCADE
 );
 
-DROP TABLE carro;
-
-SELECT * FROM carro;
-
 -- Tabela dos clientes que compram uma diária para estacionar no local
 
 CREATE TABLE diaria (
@@ -25,10 +21,6 @@ CREATE TABLE diaria (
 	PRIMARY KEY(id_dia)
 );
 
-DROP TABLE diaria;
-
-SELECT * FROM diaria;
-
 -- Tabela dos clientes que pagam mensalmente para estacionar no local
  
 CREATE TABLE mensal (
@@ -39,11 +31,4 @@ CREATE TABLE mensal (
 	dia DATE NOT NULL,
 	PRIMARY KEY(id_mensal)
  );
- 
-DROP TABLE mensal;
 
-SELECT * FROM mensal;
- 
- -- ------------------------------------------------------------------------------------------
- 
--- Inserindo dados para teste:
