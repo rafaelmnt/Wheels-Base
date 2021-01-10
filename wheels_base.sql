@@ -1,6 +1,21 @@
--- Tabela dos carros que estão cadastrados estacionamento como mensalistas
+-- Criando e selecionando o banco de dados 
+
+CREATE DATABASE wheels_base;
 
 USE wheels_base;
+
+-- Tabela dos clientes que pagam mensalmente para estacionar no local
+ 
+CREATE TABLE mensal (
+	id_mensal INT AUTO_INCREMENT,
+	pri_nome VARCHAR(20) NOT NULL,
+	seg_nome VARCHAR(20) NOT NULL,
+	telefone INT,
+	dia DATE NOT NULL,
+	PRIMARY KEY(id_mensal)
+ );
+
+-- Tabela dos carros que estão cadastrados estacionamento como mensalistas
 
 CREATE TABLE carro (
 	placa VARCHAR(7),
@@ -20,15 +35,3 @@ CREATE TABLE diaria (
 	saida TIME,
 	PRIMARY KEY(id_dia)
 );
-
--- Tabela dos clientes que pagam mensalmente para estacionar no local
- 
-CREATE TABLE mensal (
-	id_mensal INT AUTO_INCREMENT,
-	pri_nome VARCHAR(20) NOT NULL,
-	seg_nome VARCHAR(20) NOT NULL,
-	telefone INT,
-	dia DATE NOT NULL,
-	PRIMARY KEY(id_mensal)
- );
-
