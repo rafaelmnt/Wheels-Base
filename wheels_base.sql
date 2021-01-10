@@ -20,9 +20,9 @@ CREATE TABLE mensal (
 CREATE TABLE carro (
 	placa VARCHAR(7),
 	modelo VARCHAR(20),
-    id_mensal INT,
+    	id_mensal INT,
 	PRIMARY KEY(placa),
-    FOREIGN KEY(id_mensal) REFERENCES mensal(id_mensal) ON DELETE CASCADE
+    	FOREIGN KEY(id_mensal) REFERENCES mensal(id_mensal) ON DELETE CASCADE
 );
 
 -- Tabela dos clientes que compram uma diária para estacionar no local
