@@ -43,8 +43,6 @@ input_entrada.insert(0, horario)
 
 cadastro_diaria = Button(menu_diaria, text='Cadastrar')
 
-#placa = Label(menu_diaria, text=agora.strftime("%d/%m/%Y %H:%M:%S"), pady=5, padx=20)
-
 #Posicionando todos os títulos e as barras de pesquisas
 
 texto_placa.grid(row=0, column=0)
